@@ -1,0 +1,44 @@
+Comparison Operators
+Boolean Expressions
+Yes/No result which control program flow
+Comparison operators look at the variables but do not change the variables
+
+< Less than
+<= Less than or equal to
+== Equal to
+>= Greater than or equal to
+> Greater than
+!= Not equal
+
+Increase/maintain after...
+if 
+or
+for
+
+Decrease to indicate end of block
+
+Two way decisions
+Else
+"Fork in the road"
+
+x = 4
+
+if x > 2 :
+    print('Bigger')
+else :
+    print('Smaller')
+
+print('All done.')
+
+Multi way
+elif
+
+if x < 2 :
+    print('small')
+elif x < 10 :
+    print('medium')
+else :
+    print('large')
+print('All done')
+
+try/except
