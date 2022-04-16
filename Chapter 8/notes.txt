@@ -1,0 +1,65 @@
+Using open()
+handle = open(filename,mode)
+returns a handle use to manipulate the file
+filename is a string
+mode is optional and should be:
+'r' if we're planning to read the file
+'w' if we're planning to write to the file
+
+What is a handle?
+fhand = open('mbox.txt')
+print(fhand)
+
+The newline character
+We use a special character called the "newline" to indicate when a line ends
+We represent it as \n in strings
+Newline is still one character (not two)
+
+File processing
+A text file has newlines at the end of each line
+
+File Handle as a Sequence
+A file handle open for read can be treated as a sequence of strings where each line in the file is a string in the sequence.
+We can use the for statement to iterate through a sequence.
+Remember a sequence is an ordered set.
+
+xfile = open('mbox.txt')
+for cheese in xfile:
+    print(cheese)
+
+Counting lines in a file
+Open a file read-only
+Use a for loop to read each line
+
+Reading the whole file
+We can read the whole file (newlines and all) in to a single string
+
+Searching through a file
+We can put an if statement in our for loop to only print lines that meet some criteria.
+Each line from the file has a newline at the end.
+The print statment adds a newline to each line.
+
+rstrip()
+We can strip the whitespace from the right-hand side of the string using rstrip() from the string library
+The newline is considered white space and is stripped.
+
+fhand = open('mbox-short.txt')
+for line in fhand:
+    line = line.rstrip()
+    if line.startswith('From:'):
+        print(line)
+
+Skipping with Continue
+We can convieniently skip a line by using the continue statement.
+
+Using in to select lines
+We can look for a string anywhere in a line as our selection criteria
+
+Bad File Names
+fname = input('Enter the file name: ')
+try:
+    fhand = open(fname)
+except:
+    print('File cannot be opened: ', fname)
+    quit()
+
