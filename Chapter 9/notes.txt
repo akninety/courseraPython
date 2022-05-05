@@ -1,0 +1,88 @@
+What is not a collection?
+Most of our variables have one value in them - when we put a new value in a variable, the old value is overwritten.
+
+A list is a kind of collection
+A collection allows us to put many values in a single "variable"
+A collection is nice because we can carry many variables around in one convenient package
+
+List constants
+List constants are surrounded by square brackets and the elements in the list are separated by commas
+A list element can be any python object - even another list
+A list can be empty
+
+Lists and definite loops
+Best pals
+
+Looking inside Lists
+Just like strings, we can get at any single element in a list using an index specified in square brackets
+
+mutable = changeable
+
+Lists are mutable
+Strings are immuable - We cannot change the contents of a string - we must make a new string to make any change
+Lists are mutable - we can change an element of a list using the index operator
+
+How long is a list
+The len() function takes a list as a parameter and returns the number of elements in the list
+Actually len() tells us the number of elements of any set or sequence (such as a string)
+
+Using the range function
+The range function returns a list of numbers that range from zero to one less than the parameter
+We can construct an index loop for and an integer iterator
+
+for i in range(len(friends)) :
+    friend = friends[i]
+    print('Happy New Year:', friend)
+
+Concatenating lists using +
+c = a + b
+
+Lists can be sliced using :
+Remeber, just like in strings, the second number is "Up to but not including"
+
+List methods
+append, count, extend, index, insert, pop, remove, reverse, sort
+
+Building a list from scratch
+We can create an empty list and then add elements using the append methods
+The list stays in order and new elements are added at the end of the list
+
+stuff = list()
+stuff.append('book')
+stuff.append(99)
+
+Is something in a list?
+Python provides two operators that let you check if an item is in a list
+These are logical operators that return true or false
+They do not modify the list
+
+Lists are in order
+A list can hold many items and keeps those items in the order until we do something to change the order
+A list can be sorted
+The sort method means "sort yourself"
+
+Built-in functions and lists
+There are a number or functions built into python that take lists as parameters
+Remember the loops we built? These are much simpler.
+
+numlist = list()
+while True : 
+    inp = input('Enter a number: ')
+    if inp == 'done' : break
+    value = float(input)
+    numlist.append(value)
+
+average = sum(numlist) / len(numlist)
+print('Average:', average)
+
+Best friends: Strings and lists
+Split breaks a string into parts and produces a list of strings. We think of these as words.
+We can access a particular word of loop through all the words.
+
+When you do not specify a delimeter, multiple spaces are treated like one delimeter
+You can specify what delimeter character to use in the splitting
+thing = line.split(';')
+
+The double split pattern
+Sometimes we split a line one way, and then grab one of the pieces of the line and split that peice again
+
