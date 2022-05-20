@@ -1,0 +1,46 @@
+Tuples are just like Lists
+
+Tuples are another kind of sequence that fucntions much list a list
+-They have elements which are indexed starting at 0
+
+Tuples are immutable
+Unlike a list, once you create a tuple, you cannot alter its contents
+
+You can't
+sort
+reverse
+append
+
+You can
+count
+index
+
+Tuples are more efficient
+Since python does not have to build tuple structures to be modifiable,
+they are simpler and more efficient in terms of memory and performance than lists.
+
+So in our program when we are making "temporary variables" we prefer tuples over lists.
+
+Tuples are comparable
+The comparison operators work with tuples and other sequences.
+If the first item is equal, python goes on to the next element, and so on,
+until it finds elements that differ.
+
+Sorting lists of tuples
+We can take advantage of the ability to sort a list of tuples to get a sorted version of a dctionary.
+First we sort the dicitonary by the key using the items() method and sorted() founction.
+
+Using sorted()
+We can do this even more directly using the build-in function sorted that take a sequence as a parameter
+and returns a sorted sequence.
+
+Sort by values instead of key
+If we could construct a list of tuples of the form (value, key), we could sort by value
+We do this with a for loop that creates a list of tuples
+
+for k, v in c.items():
+    tmp.append( (v, k))
+
+tmp = sorted(tmp, reverse = True)
+
+
