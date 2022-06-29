@@ -1,0 +1,5 @@
+TCP Port Numbers
+A port is an application specific or process specific software communication endpoint
+It allows multiple networked applications to coexist on the same server
+There is a list of well known TCP port Numbers
+
