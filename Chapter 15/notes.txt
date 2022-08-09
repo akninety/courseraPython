@@ -1,0 +1,19 @@
+The ord() function tells us the numeric value of a simple ASCII character
+
+Multi-byte characters
+UTF-16 fixed length two bytes
+UTF-32 fixed length four bytes
+UTF-8 1-4 bytes
+
+UTF-8
+Upwards compatible with ASCII
+Automatic detection between ASCII and UTF-8
+Recommended practice for encoding data to be exchanged between systems
+
+Python 3 - all strings internally are unicode
+When we talk to a network resource using sockets or talk to a database, we have to encode and decode
+data (usually to UTF-8)
+
+urllib
+Library that does all the socket work
+
